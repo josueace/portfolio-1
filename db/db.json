@@ -1,0 +1,128 @@
+{
+  "category": [
+    
+	{
+      "id": 1,
+      "name": "TOP CATEGORIES"
+    },
+    {
+      "id": 2,
+      "name": "IronHack"
+    },
+    {
+      "id": "3",
+      "name": "Software"
+    },
+	{
+      "id": 1,
+      "name": "Hardware"
+    },
+    {
+      "id": 2,
+      "name": "Sports"
+    },
+    {
+      "id": "3",
+      "name": "Travel"
+    },
+	{
+      "id": 1,
+      "name": "Music"
+    },
+    {
+      "id": 2,
+      "name": "Politics"
+    },
+    {
+      "id": "3",
+      "name": "Food"
+    },
+	{
+      "id": 1,
+      "name": "House"
+    },
+    {
+      "id": 2,
+      "name": "Stock Market"
+    },
+    {
+      "id": "3",
+      "name": "Science"
+    }
+	
+	
+  ],
+  "users": [
+    
+	{
+      "id": 1,
+      "name": "Josue Acevedo",
+	  "title":"One day at IronHack",
+	  "picture":"slider-3.jpg",
+	  "pics":[]
+    },
+    {
+      "id": 2,
+      "name": "Nancy Doe",
+	  "title":"Going Shopping",
+	  "picture":"slider-1.jpg",
+	   "pics":[]
+    },
+	{
+      "id": 3,
+      "name": "Juan Garcia",
+	  "title":"Software Blog",
+	  "picture":"slider-2.jpg",
+	   "pics":[]
+    },
+    {
+      "id": 4,
+      "name": "Jane Smith",
+	  "title":"Hardware Blog",
+	  "picture":"slider-3.jpg",
+	   "pics":[]
+    },
+	{
+      "id": 5,
+      "name": "Pedro Vargas",
+	  "title":"Javascript Development",
+	  "picture":"slider-1.jpg",
+	   "pics":[]
+    },
+    {
+      "id": 6,
+      "name": "Steve Karl",
+	  "title":"Dancing",
+	  "picture":"slider-2.jpg",
+	   "pics":[]
+    }
+	
+    
+  
+   ],
+   "latest": [
+    
+	{
+      "id": 1,
+      "date": "Jun 28 2019",
+	  "title":"Miami Heat at American"
+	  
+    },
+	{
+      "id": 1,
+      "date": "Jun 24 2019",
+	  "title":"Trip to Orlando"
+    },
+	{
+      "id": 1,
+      "date": "Jun 22 2019",
+	  "title":"Punta Cana"
+    },
+	{
+      "id": 1,
+      "date": "Jun 21 2019",
+	  "title":"Disney World"
+    }
+   ]
+   
+}
