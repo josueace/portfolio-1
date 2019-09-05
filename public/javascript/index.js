@@ -26,27 +26,45 @@ function fillUsers(data){
 		   var allUsers='';
 		   var users=[];
 		   
+		   
+		   
+		 var rows=data.length/2;
+		
+		 var userRows='';
+         for (let i=0;i<rows;i++){
+		     userRows=userRows+
+			 '<div class="userRow">'+
+			      '<div class="userItem" ></div>  <div class="userItem"></div>'+
+			 '</div>';
+			 
+		   }			 
+		  document.getElementById('mycenter').innerHTML=userRows;
+		   
 	var cnt=0;   
 	$.each(data, function(i, obj) {
 	       
-		   
+		   /*
 		   var user=templateUser.replace(/x-name/g,obj.name);
 		      user=user.replace(/x-title/g,obj.title);
 			   user=user.replace(/x-id/g,'user-'+obj.id);
 			    users[cnt]=user.replace(/slider-1.jpg/g,obj.picture);
+			 
+			 
 		   cnt++;
 		  
 		   if (cnt==2){
 			   cnt=0;
-			   allUsers+=part1+users[0]+users[1]+part2+'<br><br>';
+			   allUsers+=part1+users[0]+users[1]+part2;
 		    }
 			else if (i==data.length-1)
-			   allUsers+=part1+users[0]+part2+'<br><br>';
+			   allUsers+=part1+users[0]+part2;
 				
-	       			
+	     */
+          	 
          });
 	
-         document.getElementById('mycenter').innerHTML=allUsers;
+       //  document.getElementById('mycenter').innerHTML=allUsers;
+		 
 
 }
 

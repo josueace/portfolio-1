@@ -95,8 +95,14 @@
 	  "title":"Dancing",
 	  "picture":"slider-2.jpg",
 	   "pics":[]
+    },
+	{
+      "id": 7,
+      "name": "Juan Gomez",
+	  "title":"Dancing",
+	  "picture":"slider-2.jpg",
+	   "pics":[]
     }
-	
     
   
    ],
