@@ -63,10 +63,10 @@ class APIHandler {
   }
 
   createOneRegister (data) {
-	 console.log(JSON.stringify(data));
-	 this.api.post('characters',data)
+	 alert(JSON.stringify(data));
+	 this.api.post('users',data)
     .then(response => {
-        
+        alert('lleg');
     })
     .catch(error => {
         alert( 'Error: '+error);

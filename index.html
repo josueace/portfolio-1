@@ -114,22 +114,22 @@
           
 		  <form action="">
 	
-Select Category:	
-  <select>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="mercedes">Mercedes</option>
-    <option value="audi">Audi</option>
-   </select><br>
-
+	
+  Category<br>
+  <input id="cat" type="text" name="category" value=""><br>
+  Tags:<br>
+  <input id="tag" type="text" name="tags" value=""><br>
+  Image:(use:beach-1.jpg,beach-2.jpg,beach3.jpg,slider-1.jpg,slider-2.jpg,slider-3.jpg<br>
+ 
+ <input id="mypic" type="text" name="mypic" value=""><br>
   Full Name:<br>
-  <input type="text" name="fullname" value="Mickey">
+  <input id="fullname" type="text" name="fullname" value="">
   <br>
   Title:<br>
-  <input type="text" name="title" value="Mouse">
+  <input id="title" type="text" name="title" size="100%" value="">
   <br><br>
    Text:<br>
-  <textarea style='height:300px;width:100%' name="comment" form="usrform">Enter text here...</textarea>
+  <textarea style='height:300px;width:100%' id="comment" name="comment" form="usrform">Enter text here...</textarea>
   <br><br>
   
  
@@ -138,7 +138,7 @@ Select Category:
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-		    <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+		    <button id='save' type="button" class="btn btn-default" data-dismiss="modal">Save</button>
         </div>
       </div>
     </div>

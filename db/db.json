@@ -1,7 +1,6 @@
 {
   "category": [
-    
-	{
+    {
       "id": 1,
       "name": "TOP CATEGORIES"
     },
@@ -13,7 +12,7 @@
       "id": "3",
       "name": "Software"
     },
-	{
+    {
       "id": 1,
       "name": "Hardware"
     },
@@ -25,7 +24,7 @@
       "id": "3",
       "name": "Travel"
     },
-	{
+    {
       "id": 1,
       "name": "Music"
     },
@@ -37,7 +36,7 @@
       "id": "3",
       "name": "Food"
     },
-	{
+    {
       "id": 1,
       "name": "House"
     },
@@ -49,93 +48,84 @@
       "id": "3",
       "name": "Science"
     }
-	
-	
   ],
   "users": [
-    
-	{
+    {
       "id": 1,
       "name": "Josue Acevedo",
-	  "title":"One day at IronHack",
-	  "picture":"slider-3.jpg",
-	  "category":"Music",
-	  "pics":[]
+      "title": "One day at IronHack",
+      "picture": "slider-3.jpg",
+      "category": "Music"
     },
     {
       "id": 2,
       "name": "Nancy Doe",
-	  "title":"Going Shopping",
-	  "picture":"slider-1.jpg",
-	  "category":"Software",
-	   "pics":[]
+      "title": "Going Shopping",
+      "picture": "slider-1.jpg",
+      "category": "Software"
     },
-	{
+    {
       "id": 3,
       "name": "Juan Garcia",
-	  "title":"Software Blog",
-	  "picture":"slider-2.jpg",
-	  "category":"Software",
-	   "pics":[]
+      "title": "Software Blog",
+      "picture": "slider-2.jpg",
+      "category": "Software"
     },
     {
       "id": 4,
       "name": "Jane Smith",
-	  "title":"Hardware Blog",
-	  "picture":"slider-3.jpg",
-	  "category":"Software",
-	   "pics":[]
-    },
-	{
-      "id": 5,
-      "name": "Jane Smith",
-	  "title":"Javascript Development",
-	  "picture":"slider-1.jpg",
-	  "category":"Music",
-	   "pics":[]
+      "title": "Hardware Blog",
+      "picture": "beach-1.jpg",
+      "category": "Software"
     },
     {
-      "id": 6,
-      "name": "Steve Karl",
-	  "title":"Dancing",
-	  "picture":"slider-2.jpg",
-	  "category":"Software",
-	   "pics":[]
+      "myblog": "interneEnter text here...",
+      "name": "marco rubio",
+      "title": "this is my post",
+      "category": "Music",
+      "tag": "gaga",
+      "picture": "beach-1.jpg",
+      "id": 6
     },
-	{
-      "id": 7,
-      "name": "Juan Gomez",
-	  "title":"Dancing",
-	  "category":"Music",
-	  "picture":"slider-2.jpg",
-	   "pics":[]
+    {
+      "myblog": "my testEnter text here...",
+      "name": "juan gonzo",
+      "title": "this is a test",
+      "category": "Music",
+      "tag": "gaga",
+      "picture": "beach-1.jpg",
+      "id": 7
+    },
+    {
+      "myblog": "mendoosEnter text here...",
+      "name": "juan meno",
+      "title": "menodaz",
+      "category": "Music",
+      "tag": "ned",
+      "picture": "slider-3.jpg",
+      "id": 8
     }
-    
-  
-   ],
-   "latest": [
-    
-	{
+  ],
+  "latest": [
+    {
       "id": 1,
       "date": "Jun 28 2019",
-	  "title":"Miami Heat at American"
-	  
+      "title": "Miami Heat at American"
     },
-	{
+    {
       "id": 1,
       "date": "Jun 24 2019",
-	  "title":"Trip to Orlando"
+      "title": "Trip to Orlando"
     },
-	{
+    {
       "id": 1,
       "date": "Jun 22 2019",
-	  "title":"Punta Cana"
+      "title": "Punta Cana"
     },
-	{
+    {
       "id": 1,
       "date": "Jun 21 2019",
-	  "title":"Disney World"
+      "title": "Disney World"
     }
-   ]
-   
+  ]
 }

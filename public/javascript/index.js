@@ -40,35 +40,31 @@ var pair=[];
 		
 	      userRows=userRows+
 			 '<div class="userRow">'+
-			   '<div class="userItem" style="background-image: url(\'img/'+pair[0].picture+'\')">'+
-				'<p class="blogtitle1" >'+obj.name+'</p>'+ 
-			    '<p class="blogtitle2" >'+obj.title+'</p>'+ 
+			   '<div class="userItem" style="background-size: 600px;background-repeat:no-repeat;background-image: url(\'img/'+pair[0].picture+'\')">'+
+				'<p class="blogtitle1" >'+pair[0].name+'</p>'+ 
+			    '<p class="blogtitle2" >'+pair[0].title+'</p>'+ 
 				'</div>'+
 			 
-			   '<div class="userItem" style="background-image: url(\'img/'+pair[1].picture+'\')">'+
-				'<p class="blogtitle1" >'+obj.name+'</p>'+ 
-			    '<p class="blogtitle2" >'+obj.title+'</p>'+ 
+			   '<div class="userItem" style="background-size: 600px;background-repeat:no-repeat;background-image: url(\'img/'+pair[1].picture+'\')">'+
+				'<p class="blogtitle1" >'+pair[1].name+'</p>'+ 
+			    '<p class="blogtitle2" >'+pair[1].title+'</p>'+ 
 				'</div>'+
 			 '</div>';  
 			 pair=[];
 		 }
 		 else if (pair.length==1 && i==data.length-1){
+			 
 			 userRows=userRows+
 			 '<div class="userRow">'+
-			   '<div class="userItem" style="background-image: url(\'img/'+pair[0].picture+'\')">'+
-				'<p class="blogtitle1" >'+obj.name+'</p>'+ 
-			    '<p class="blogtitle2" >'+obj.title+'</p>'+ 
+			   '<div class="userItem" style="background-size: 600px;background-repeat:no-repeat;background-image: url(\'img/'+pair[0].picture+'\')">'+
+				'<p class="blogtitle3" >'+pair[0].name+'</p>'+ 
+			    '<p class="blogtitle4" >'+pair[0].title+'</p>'+ 
 				'</div>'+
 			 '</div>'; 
+			  pair=[];
 		 }
 			 
 		 document.getElementById('mycenter').innerHTML=userRows;
-		 	 
-		   alert(obj.name);
-		     alert(obj.title);
-			 
-			    alert(obj.picture);
-			 
 			 
 		   cnt++;
 		  
@@ -92,7 +88,7 @@ function fillCat(data){
            			
          });
 		
-		 var t = {'<>':'p','id':'${id}','html':'<a href="#">${name}</a>'};
+		 var t = {'<>':'p','id':'${id}','html':'<a href="javascript:dofilter(\'${name}\')">${name}</a>'};
          var d = data;
 		
          document.getElementById('myside').innerHTML=json2html.transform(d,t) ; 
@@ -100,6 +96,11 @@ function fillCat(data){
 	   
 	
 
+}
+
+function dofilter(name){
+
+alert(name);
 }
 
 function fillOne(data){
@@ -192,26 +193,41 @@ $(document).ready( () => {
 	
   });
   
+   $('#save').click(function(){
+	   /*
+	    "name": "Nancy Doe",
+	  "title":"Going Shopping",
+	  "picture":"slider-1.jpg",
+	  "category":"Software"
+	  */
+	  
+	   var blog={};
+	   var cmt=$('#comment').val();
+	  
+	   blog.myblog=cmt;
+	   blog.name=$('#tag').val();
+	   blog.title=$('#title').val();
+	   blog.category=$('#cat').val();
+	   blog.tag=$('#tag').val();
+	    
+	   blog.name=$('#fullname').val();
+       blog.picture=$('#mypic').val();
+	  
+	  
+	
+	   
+     api.createOneRegister(blog);
+	 
+    
+	
+  });
+  
   
   $('a').click( function(e) {e.preventDefault(); 
    $('#newblog').click();
   return false; } );
   
   
-  /*
-  document.getElementById('edit-character-form').onsubmit = function(){
-	   let data=doPayLoadEdit();
-	   api.updateOneRegister ($('#editid').val(),data);
-        
-  }
   
-  document.getElementById('new-character-form').onsubmit = function(){
-	 	event.preventDefault();  
-	
-        let data=doPayLoad();
-		
-        api.createOneRegister(data);		
-  }
-  */
   
 })
