@@ -59,6 +59,7 @@
       "name": "Josue Acevedo",
 	  "title":"One day at IronHack",
 	  "picture":"slider-3.jpg",
+	  "category":"Music",
 	  "pics":[]
     },
     {
@@ -66,6 +67,7 @@
       "name": "Nancy Doe",
 	  "title":"Going Shopping",
 	  "picture":"slider-1.jpg",
+	  "category":"Software",
 	   "pics":[]
     },
 	{
@@ -73,6 +75,7 @@
       "name": "Juan Garcia",
 	  "title":"Software Blog",
 	  "picture":"slider-2.jpg",
+	  "category":"Software",
 	   "pics":[]
     },
     {
@@ -80,13 +83,15 @@
       "name": "Jane Smith",
 	  "title":"Hardware Blog",
 	  "picture":"slider-3.jpg",
+	  "category":"Software",
 	   "pics":[]
     },
 	{
       "id": 5,
-      "name": "Pedro Vargas",
+      "name": "Jane Smith",
 	  "title":"Javascript Development",
 	  "picture":"slider-1.jpg",
+	  "category":"Music",
 	   "pics":[]
     },
     {
@@ -94,12 +99,14 @@
       "name": "Steve Karl",
 	  "title":"Dancing",
 	  "picture":"slider-2.jpg",
+	  "category":"Software",
 	   "pics":[]
     },
 	{
       "id": 7,
       "name": "Juan Gomez",
 	  "title":"Dancing",
+	  "category":"Music",
 	  "picture":"slider-2.jpg",
 	   "pics":[]
     }

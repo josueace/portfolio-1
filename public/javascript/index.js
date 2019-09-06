@@ -34,7 +34,14 @@ function fillUsers(data){
          for (let i=0;i<rows;i++){
 		     userRows=userRows+
 			 '<div class="userRow">'+
-			      '<div class="userItem" ></div>  <div class="userItem"></div>'+
+			   '<div class="userItem" style="background-size: 600px;background-repeat:no-repeat;background-image: url(\'img/'+myimg[j]'\')">'+
+				'<p class="blogtitle1" >esto va centro2</p>'+ 
+			    '<p class="blogtitle2" >esto va centro2</p>'+ 
+				'</div>  <div class="userItem" style="background-size: 600px;background-repeat:no-repeat;background-image: url(\'img/beach-1.jpg\')" >'+
+				'<p class="blogtitle1" >esto va centro2</p>'+ 
+			    '<p class="blogtitle2" >esto va centro2</p>'+ 
+				'</div>'+
+				 
 			 '</div>';
 			 
 		   }			 
@@ -43,23 +50,15 @@ function fillUsers(data){
 	var cnt=0;   
 	$.each(data, function(i, obj) {
 	       
-		   /*
-		   var user=templateUser.replace(/x-name/g,obj.name);
-		      user=user.replace(/x-title/g,obj.title);
-			   user=user.replace(/x-id/g,'user-'+obj.id);
-			    users[cnt]=user.replace(/slider-1.jpg/g,obj.picture);
+		   alert(obj.name);
+		     alert(obj.title);
+			 
+			    alert(obj.picture);
 			 
 			 
 		   cnt++;
 		  
-		   if (cnt==2){
-			   cnt=0;
-			   allUsers+=part1+users[0]+users[1]+part2;
-		    }
-			else if (i==data.length-1)
-			   allUsers+=part1+users[0]+part2;
-				
-	     */
+		
           	 
          });
 	
@@ -179,6 +178,12 @@ $(document).ready( () => {
     api.deleteOneRegister($('#character-id-delete').val());
 	
   });
+  
+  
+  $('a').click( function(e) {e.preventDefault(); 
+   $('#newblog').click();
+  return false; } );
+  
   
   /*
   document.getElementById('edit-character-form').onsubmit = function(){
