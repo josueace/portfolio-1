@@ -28,28 +28,42 @@ function fillUsers(data){
 		   
 		   
 		   
-		 var rows=data.length/2;
-		
-		 var userRows='';
-         for (let i=0;i<rows;i++){
-		     userRows=userRows+
-			 '<div class="userRow">'+
-			   '<div class="userItem" style="background-size: 600px;background-repeat:no-repeat;background-image: url(\'img/'+myimg[j]'\')">'+
-				'<p class="blogtitle1" >esto va centro2</p>'+ 
-			    '<p class="blogtitle2" >esto va centro2</p>'+ 
-				'</div>  <div class="userItem" style="background-size: 600px;background-repeat:no-repeat;background-image: url(\'img/beach-1.jpg\')" >'+
-				'<p class="blogtitle1" >esto va centro2</p>'+ 
-			    '<p class="blogtitle2" >esto va centro2</p>'+ 
-				'</div>'+
-				 
-			 '</div>';
-			 
-		   }			 
-		  document.getElementById('mycenter').innerHTML=userRows;
+		 
+		 
 		   
-	var cnt=0;   
+var cnt=0; 
+ var userRows='';
+var pair=[]; 
 	$.each(data, function(i, obj) {
-	       
+		 pair.push(obj);
+		 if (pair.length==2){
+		
+	      userRows=userRows+
+			 '<div class="userRow">'+
+			   '<div class="userItem" style="background-image: url(\'img/'+pair[0].picture+'\')">'+
+				'<p class="blogtitle1" >'+obj.name+'</p>'+ 
+			    '<p class="blogtitle2" >'+obj.title+'</p>'+ 
+				'</div>'+
+			 
+			   '<div class="userItem" style="background-image: url(\'img/'+pair[1].picture+'\')">'+
+				'<p class="blogtitle1" >'+obj.name+'</p>'+ 
+			    '<p class="blogtitle2" >'+obj.title+'</p>'+ 
+				'</div>'+
+			 '</div>';  
+			 pair=[];
+		 }
+		 else if (pair.length==1 && i==data.length-1){
+			 userRows=userRows+
+			 '<div class="userRow">'+
+			   '<div class="userItem" style="background-image: url(\'img/'+pair[0].picture+'\')">'+
+				'<p class="blogtitle1" >'+obj.name+'</p>'+ 
+			    '<p class="blogtitle2" >'+obj.title+'</p>'+ 
+				'</div>'+
+			 '</div>'; 
+		 }
+			 
+		 document.getElementById('mycenter').innerHTML=userRows;
+		 	 
 		   alert(obj.name);
 		     alert(obj.title);
 			 
@@ -62,8 +76,7 @@ function fillUsers(data){
           	 
          });
 	
-       //  document.getElementById('mycenter').innerHTML=allUsers;
-		 
+       
 
 }
 
